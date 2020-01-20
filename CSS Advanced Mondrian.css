@@ -1,0 +1,132 @@
+
+* { 
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background: white;
+    
+  }   
+  
+  body {
+
+    padding: 50px;
+  }
+
+  .grid { 
+    display: grid; 
+    grid-auto-flow: dense;
+    grid-auto-rows: 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px;
+    grid-gap: 2px 2px;
+   
+  }
+
+.smallgrid
+{
+    background: white;
+    padding: 50px;
+    border: 10px solid black;
+
+}
+
+.mediumgrid
+{
+    background: red;
+    border: 10px solid black;
+    grid-column: span 2;
+    grid-row: span 3;
+} 
+
+.largegrid
+{
+    background: blue;
+    border: 10px solid black;
+    grid-column: 100px;
+    grid-row: 100px;
+} 
+
+.xlargegrid
+{
+    background: yellow;
+    border: 10px solid black;
+    grid-column: span 3;
+    grid-row: span 1 ;
+
+} 
+
+
+}
+   
+
+@media screen and (min-width: 300px) { 
+
+    .smallgrid
+    {
+        background: red;
+        padding: 50px;
+        border: 10px solid black;
+    
+    }
+    
+    .mediumgrid
+    {
+        background: blue;
+        border: 10px solid black;
+        grid-column: 190px;
+        grid-row: 203px;
+    } 
+    
+    .largegrid
+    {
+        background: yellow;
+        border: 10px solid black;
+        grid-column: span 1;
+        grid-row: span 3;
+    } 
+    
+    .xlargegrid
+    {
+        background: white;
+        border: 10px solid black;
+        grid-column: span 2;
+        grid-row: 200px;
+    
+    } 
+
+
+}
+
+@media only screen and (min-width: 1200px) { 
+    .smallgrid
+    {
+        background: blue;
+        padding: 50px;
+        border: 10px solid black;
+    
+    }
+    
+    .mediumgrid
+    {
+        background: blue;
+        border: 10px solid black;
+        grid-column: 400px;
+        grid-row: 50px;
+    } 
+    
+    .largegrid
+    {
+        background: yellow;
+        border: 10px solid black;
+        grid-column: 320px;
+        grid-row: 500px;
+    } 
+    
+    .xlargegrid
+    {
+        background: red;
+        border: 10px solid black;
+        grid-column: 300px;
+        grid-row: 156px;
+    
+    } 
+
+}
