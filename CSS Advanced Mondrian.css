@@ -25,7 +25,8 @@
     background: white;
     padding: 50px;
     border: 10px solid black;
-
+    grid-column: span 1;
+    grid-row: span 1;
 }
 
 .mediumgrid
